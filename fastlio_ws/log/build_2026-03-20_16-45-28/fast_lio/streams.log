@@ -1,0 +1,315 @@
+[0.007s] Invoking command in '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yd/program/nyx/FAST-LIO/fastlio_ws/src/FAST_LIO_ROS2 -DPython3_EXECUTABLE=/usr/bin/python3 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio
+[0.047s] -- The C compiler identification is GNU 11.4.0
+[0.088s] -- The CXX compiler identification is GNU 11.4.0
+[0.093s] -- Detecting C compiler ABI info
+[0.154s] -- Detecting C compiler ABI info - done
+[0.160s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.160s] -- Detecting C compile features
+[0.160s] -- Detecting C compile features - done
+[0.162s] -- Detecting CXX compiler ABI info
+[0.236s] -- Detecting CXX compiler ABI info - done
+[0.244s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.244s] -- Detecting CXX compile features
+[0.244s] -- Detecting CXX compile features - done
+[0.245s] [0mCurrent CPU archtecture: x86_64[0m
+[0.249s] [0mProcesser number:  20[0m
+[0.249s] [0mcore for MP: 3[0m
+[0.546s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") 
+[0.547s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.655s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.694s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.706s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.724s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.726s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.730s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.736s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.744s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.766s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.767s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.829s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.847s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.873s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.878s] -- Looking for pthread.h
+[0.941s] -- Looking for pthread.h - found
+[0.941s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.015s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.016s] -- Found Threads: TRUE  
+[1.048s] -- Found rclcpp_components: 16.0.18 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.062s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.068s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.077s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.087s] -- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)
+[1.092s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.103s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[1.128s] -- Checking for module 'eigen3'
+[1.139s] --   Found eigen3, version 3.4.0
+[1.180s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.180s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.205s] -- Checking for module 'flann'
+[1.216s] --   Found flann, version 1.9.1
+[1.285s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.285s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.172s] -- Checking for module 'libusb-1.0'
+[2.197s] --   Found libusb-1.0, version 1.0.25
+[2.276s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.278s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.351s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.451s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.457s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.462s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.559s] -- Found Qhull version 8.0.2
+[2.651s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.743s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.743s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.744s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.744s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.745s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.745s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.746s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.746s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.746s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.747s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.747s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.748s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.748s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.749s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.749s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.750s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.750s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.751s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.752s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.752s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.752s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.753s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.753s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.753s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.754s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.768s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.768s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.768s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.806s] -- Found livox_ros_driver2: 1.0.0 (/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[2.817s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.822s] [33mCMake Warning (dev) at CMakeLists.txt:81 (find_package):
+[2.822s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[2.822s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[2.822s]   command to set the policy and suppress this warning.
+[2.822s] 
+[2.822s]   CMake variable PCL_ROOT is set to:
+[2.822s] 
+[2.822s]     /usr
+[2.822s] 
+[2.822s]   For compatibility, CMake is ignoring the variable.
+[2.822s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.822s] [0m
+[2.827s] [0mEigen:/usr/include/eigen3[0m
+[2.827s] -- PCL: /usr/include/pcl-1.12
+[2.985s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.178s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.254s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.268s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.269s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.284s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.284s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.284s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.284s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.298s] -- Found PythonExtra: .so  
+[3.331s] -- Configuring done
+[3.372s] -- Generating done
+[3.383s] -- Build files have been written to: /home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio
+[3.399s] Invoked command in '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yd/program/nyx/FAST-LIO/fastlio_ws/src/FAST_LIO_ROS2 -DPython3_EXECUTABLE=/usr/bin/python3 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio
+[3.401s] Invoking command in '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio -- -j20 -l20
+[3.437s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.445s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.451s] [  5%] Built target ament_cmake_python_symlink_fast_lio
+[3.582s] running egg_info
+[3.583s] creating fast_lio.egg-info
+[3.583s] writing fast_lio.egg-info/PKG-INFO
+[3.583s] writing dependency_links to fast_lio.egg-info/dependency_links.txt
+[3.583s] writing top-level names to fast_lio.egg-info/top_level.txt
+[3.583s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[3.584s] reading manifest file 'fast_lio.egg-info/SOURCES.txt'
+[3.584s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[3.606s] [  5%] Built target ament_cmake_python_build_fast_lio_egg
+[3.631s] [  8%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_c.dir/rosidl_generator_c/fast_lio/msg/detail/pose6_d__functions.c.o[0m
+[3.633s] [  8%] Built target fast_lio__cpp
+[3.642s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.642s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.642s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.717s] [ 20%] [32m[1mLinking C shared library libfast_lio__rosidl_generator_c.so[0m
+[3.750s] [ 20%] Built target fast_lio__rosidl_generator_c
+[3.760s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.760s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.760s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.820s] [ 31%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[3.834s] [ 34%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp.o[0m
+[3.839s] [ 37%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp.o[0m
+[3.961s] [ 42%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_c.dir/rosidl_typesupport_c/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[3.961s] [ 42%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o[0m
+[3.971s] [ 45%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fast_lio/msg/detail/pose6_d__type_support.c.o[0m
+[3.990s] [ 51%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_cpp.so[0m
+[3.991s] [ 51%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_c.so[0m
+[4.018s] [ 54%] [32m[1mLinking C shared library libfast_lio__rosidl_typesupport_introspection_c.so[0m
+[4.026s] [ 54%] Built target fast_lio__rosidl_typesupport_cpp
+[4.026s] [ 54%] Built target fast_lio__rosidl_typesupport_c
+[4.046s] [ 57%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o[0m
+[4.046s] [ 57%] Built target fast_lio__rosidl_typesupport_introspection_c
+[4.048s] [ 60%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o[0m
+[4.048s] [ 62%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[4.091s] [ 65%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.109s] [ 68%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_introspection_cpp.so[0m
+[4.153s] [ 68%] Built target fast_lio__rosidl_typesupport_introspection_cpp
+[4.153s] [ 68%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp
+[4.175s] [ 71%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so[0m
+[4.236s] [ 71%] Built target fast_lio__rosidl_typesupport_fastrtps_c
+[4.256s] [ 71%] Built target fast_lio
+[4.277s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.535s] [ 74%] Built target fast_lio__py
+[4.554s] [ 77%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o[0m
+[4.648s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so[0m
+[4.685s] [ 80%] Built target fast_lio__rosidl_generator_py
+[4.706s] [ 82%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.706s] [ 85%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c.o[0m
+[4.706s] [ 88%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.783s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.783s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.783s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.811s] [ 97%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext
+[4.812s] [ 97%] Built target fast_lio__rosidl_typesupport_c__pyext
+[4.814s] [ 97%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext
+[8.371s] In file included from [01m[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22[m[K,
+[8.371s]                  from [01m[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23[m[K,
+[8.371s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14[m[K,
+[8.372s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42[m[K,
+[8.372s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25[m[K,
+[8.372s]                  from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29[m[K,
+[8.372s]                  from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+[8.372s]                  from [01m[K/usr/include/boost/date_time/microsec_time_clock.hpp:18[m[K,
+[8.372s]                  from [01m[K/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31[m[K,
+[8.372s]                  from [01m[K/usr/include/boost/interprocess/detail/os_thread_functions.hpp:36[m[K,
+[8.372s]                  from [01m[K/usr/include/boost/interprocess/sync/file_lock.hpp:26[m[K,
+[8.372s]                  from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:46[m[K,
+[8.372s]                  from [01m[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:73[m[K,
+[8.372s]                  from [01m[K/home/yd/program/nyx/FAST-LIO/fastlio_ws/src/FAST_LIO_ROS2/src/IMU_Processing.hpp:18[m[K,
+[8.372s]                  from [01m[K/home/yd/program/nyx/FAST-LIO/fastlio_ws/src/FAST_LIO_ROS2/src/laserMapping.cpp:47[m[K:
+[8.372s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[8.372s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[8.372s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[49.305s] [100%] [32m[1mLinking CXX executable fastlio_mapping[0m
+[50.036s] [100%] Built target fastlio_mapping
+[50.047s] Invoked command in '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio -- -j20 -l20
+[50.055s] Invoking command in '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio
+[50.063s] -- Install configuration: "Release"
+[50.064s] -- Execute custom install script
+[50.064s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio
+[50.070s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h
+[50.078s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h
+[50.084s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h
+[50.090s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h
+[50.097s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h
+[50.107s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/library_path.sh
+[50.114s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/library_path.dsv
+[50.122s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h
+[50.130s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[50.136s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp
+[50.144s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp
+[50.150s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp
+[50.156s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp
+[50.162s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp
+[50.169s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp
+[50.176s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp
+[50.183s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[50.189s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h
+[50.195s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[50.201s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp
+[50.207s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/pythonpath.sh
+[50.213s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/pythonpath.dsv
+[50.219s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO
+[50.225s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt
+[50.231s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt
+[50.239s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt
+[50.246s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py
+[50.251s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c
+[50.257s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c
+[50.264s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c
+[50.271s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[50.278s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[50.287s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[50.296s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so
+[50.305s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py
+[50.312s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py
+[50.321s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c
+[50.328s] -- Up-to-date symlink: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[50.328s] -- Up-to-date symlink: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[50.328s] -- Up-to-date symlink: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[50.328s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/msg/Pose6D.idl
+[50.336s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/msg/Pose6D.msg
+[50.342s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/fast_lio/fastlio_mapping
+[50.349s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/config/avia.yaml
+[50.355s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/config/horizon.yaml
+[50.361s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/config/mid360.yaml
+[50.366s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/config/ouster64.yaml
+[50.371s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/config/velodyne.yaml
+[50.377s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch
+[50.383s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/launch/mapping.launch.py
+[50.392s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/rviz/fastlio.rviz
+[50.400s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio
+[50.407s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio
+[50.413s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh
+[50.418s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv
+[50.429s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/path.sh
+[50.436s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/path.dsv
+[50.442s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/local_setup.bash
+[50.450s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/local_setup.sh
+[50.455s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/local_setup.zsh
+[50.462s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/local_setup.dsv
+[50.471s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/package.dsv
+[50.477s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/ament_index/resource_index/packages/fast_lio
+[50.485s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake
+[50.492s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake
+[50.497s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake
+[50.504s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake
+[50.512s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[50.517s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[50.524s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[50.532s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake
+[50.539s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake
+[50.545s] -- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/package.xml
+[50.553s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so
+[50.553s] -- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""
+[50.553s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so
+[50.553s] -- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""
+[50.553s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so
+[50.553s] -- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""
+[50.553s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so
+[50.553s] -- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""
+[50.553s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so
+[50.553s] -- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""
+[50.553s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so
+[50.553s] -- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""
+[50.553s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so
+[50.554s] -- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""
+[50.577s] Listing '/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...
+[50.577s] Compiling '/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...
+[50.577s] Listing '/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...
+[50.577s] Compiling '/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...
+[50.577s] Compiling '/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...
+[50.580s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so
+[50.580s] -- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""
+[50.580s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake
+[50.580s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake
+[50.580s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake
+[50.580s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake
+[50.580s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake
+[50.580s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake
+[50.580s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[50.580s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake
+[50.580s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake
+[50.581s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake
+[50.581s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake
+[50.581s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake
+[50.581s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake
+[50.581s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake
+[50.581s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake
+[50.581s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake
+[50.581s] -- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake
+[50.582s] Invoked command in '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio

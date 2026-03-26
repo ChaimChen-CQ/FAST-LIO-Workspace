@@ -1,0 +1,827 @@
+[0.000000] (-) TimerEvent: {}
+[0.000452] (fast_lio) JobQueued: {'identifier': 'fast_lio', 'dependencies': OrderedDict()}
+[0.000488] (fast_lio) JobStarted: {'identifier': 'fast_lio'}
+[0.005039] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'cmake'}
+[0.005534] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '/home/yd/program/nyx/FAST-LIO/fastlio_ws/src/FAST_LIO_ROS2', '-DPython3_EXECUTABLE=/usr/bin/python3', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio'], 'cwd': '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('USER', 'yd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64::/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidia:/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidiasource:/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidiasource:/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidia'), ('HOME', '/home/yd'), ('OLDPWD', '/home/yd/program/nyx/FAST-LIO/fastlio_ws'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/yd/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '2357'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '3011'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11151'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('_CE_M', ''), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'yd'), ('JOURNAL_STREAM', '8:34255'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('USERNAME', 'yd'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/yd/anaconda3/condabin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/yd-Legion-Y9000P-IAH7H:@/tmp/.ICE-unix/2781,unix/yd-Legion-Y9000P-IAH7H:/tmp/.ICE-unix/2781'), ('INVOCATION_ID', '069bb194a78b444d91662297e1ccd0a8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('DISPLAY', ':0'), ('MUJOCO_PY_MUJOCO_PATH', '/home/yd/.mujoco/mujoco210'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('MUJOCO_GL', 'egl'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('CONDA_PYTHON_EXE', '/home/yd/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2:/opt/ros/humble'), ('TERMINATOR_UUID', 'urn:uuid:93997882-4592-4284-b6ea-5cf04a2edc0e'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/yd/anaconda3/bin/conda'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('PYTHONPATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2:/opt/ros/humble')]), 'shell': False}
+[0.047908] (fast_lio) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.088589] (fast_lio) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.093640] (fast_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099884] (-) TimerEvent: {}
+[0.154890] (fast_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.160207] (fast_lio) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.160443] (fast_lio) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.160586] (fast_lio) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.162308] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200028] (-) TimerEvent: {}
+[0.236249] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.244501] (fast_lio) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.244700] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.244844] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.245281] (fast_lio) StderrLine: {'line': b'\x1b[0mCurrent CPU archtecture: x86_64\x1b[0m\n'}
+[0.249134] (fast_lio) StderrLine: {'line': b'\x1b[0mProcesser number:  20\x1b[0m\n'}
+[0.249201] (fast_lio) StderrLine: {'line': b'\x1b[0mcore for MP: 3\x1b[0m\n'}
+[0.300227] (-) TimerEvent: {}
+[0.400657] (-) TimerEvent: {}
+[0.501015] (-) TimerEvent: {}
+[0.546694] (fast_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") \n'}
+[0.547441] (fast_lio) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.601118] (-) TimerEvent: {}
+[0.655901] (fast_lio) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.694271] (fast_lio) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.701289] (-) TimerEvent: {}
+[0.706778] (fast_lio) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.724239] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.726383] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.730576] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.736589] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.744714] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.766376] (fast_lio) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.767469] (fast_lio) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.801385] (-) TimerEvent: {}
+[0.829201] (fast_lio) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.846964] (fast_lio) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.873739] (fast_lio) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.878089] (fast_lio) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.901584] (-) TimerEvent: {}
+[0.941188] (fast_lio) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.941376] (fast_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.001778] (-) TimerEvent: {}
+[1.015187] (fast_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.016696] (fast_lio) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.048132] (fast_lio) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.18 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[1.062078] (fast_lio) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.068824] (fast_lio) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.078012] (fast_lio) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.087351] (fast_lio) StdoutLine: {'line': b'-- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.092430] (fast_lio) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.101948] (-) TimerEvent: {}
+[1.103541] (fast_lio) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[1.128140] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.139266] (fast_lio) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.179917] (fast_lio) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.180213] (fast_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.202163] (-) TimerEvent: {}
+[1.205436] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.216007] (fast_lio) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.285767] (fast_lio) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.285943] (fast_lio) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.302332] (-) TimerEvent: {}
+[1.402650] (-) TimerEvent: {}
+[1.502919] (-) TimerEvent: {}
+[1.603214] (-) TimerEvent: {}
+[1.703728] (-) TimerEvent: {}
+[1.804192] (-) TimerEvent: {}
+[1.904612] (-) TimerEvent: {}
+[2.005128] (-) TimerEvent: {}
+[2.105688] (-) TimerEvent: {}
+[2.172420] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.197325] (fast_lio) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.205977] (-) TimerEvent: {}
+[2.276849] (fast_lio) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.278071] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.306106] (-) TimerEvent: {}
+[2.351330] (fast_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.406322] (-) TimerEvent: {}
+[2.451583] (fast_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.457059] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.462412] (fast_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.506554] (-) TimerEvent: {}
+[2.559631] (fast_lio) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.606712] (-) TimerEvent: {}
+[2.651786] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.706869] (-) TimerEvent: {}
+[2.743537] (fast_lio) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.743982] (fast_lio) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.744578] (fast_lio) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.744927] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.745502] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.745996] (fast_lio) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.746105] (fast_lio) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[2.746247] (fast_lio) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[2.746765] (fast_lio) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.747215] (fast_lio) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.747806] (fast_lio) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.748240] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.748824] (fast_lio) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[2.749364] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[2.749877] (fast_lio) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[2.750322] (fast_lio) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[2.750900] (fast_lio) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[2.751425] (fast_lio) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[2.752067] (fast_lio) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[2.752582] (fast_lio) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[2.752993] (fast_lio) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[2.753148] (fast_lio) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[2.753367] (fast_lio) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[2.753950] (fast_lio) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[2.754507] (fast_lio) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.768102] (fast_lio) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.769030] (fast_lio) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.769092] (fast_lio) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.806209] (fast_lio) StdoutLine: {'line': b'-- Found livox_ros_driver2: 1.0.0 (/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)\n'}
+[2.806946] (-) TimerEvent: {}
+[2.817418] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.822295] (fast_lio) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:81 (find_package):\n'}
+[2.822401] (fast_lio) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[2.822439] (fast_lio) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[2.822469] (fast_lio) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[2.822493] (fast_lio) StderrLine: {'line': b'\n'}
+[2.822515] (fast_lio) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[2.822538] (fast_lio) StderrLine: {'line': b'\n'}
+[2.822560] (fast_lio) StderrLine: {'line': b'    /usr\n'}
+[2.822581] (fast_lio) StderrLine: {'line': b'\n'}
+[2.822603] (fast_lio) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[2.822625] (fast_lio) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.822647] (fast_lio) StderrLine: {'line': b'\x1b[0m\n'}
+[2.827457] (fast_lio) StderrLine: {'line': b'\x1b[0mEigen:/usr/include/eigen3\x1b[0m\n'}
+[2.827536] (fast_lio) StdoutLine: {'line': b'-- PCL: /usr/include/pcl-1.12\n'}
+[2.907212] (-) TimerEvent: {}
+[2.985411] (fast_lio) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.007437] (-) TimerEvent: {}
+[3.107698] (-) TimerEvent: {}
+[3.178091] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.207902] (-) TimerEvent: {}
+[3.254119] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.268327] (fast_lio) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.269048] (fast_lio) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.284004] (fast_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.284169] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.284200] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.284226] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.298446] (fast_lio) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.308094] (-) TimerEvent: {}
+[3.331221] (fast_lio) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.372762] (fast_lio) StdoutLine: {'line': b'-- Generating done\n'}
+[3.383729] (fast_lio) StdoutLine: {'line': b'-- Build files have been written to: /home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio\n'}
+[3.399670] (fast_lio) CommandEnded: {'returncode': 0}
+[3.400908] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'build'}
+[3.401837] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio', '--', '-j20', '-l20'], 'cwd': '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('USER', 'yd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64::/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidia:/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidiasource:/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidiasource:/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidia'), ('HOME', '/home/yd'), ('OLDPWD', '/home/yd/program/nyx/FAST-LIO/fastlio_ws'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/yd/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '2357'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '3011'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11151'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('_CE_M', ''), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'yd'), ('JOURNAL_STREAM', '8:34255'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('USERNAME', 'yd'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/yd/anaconda3/condabin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/yd-Legion-Y9000P-IAH7H:@/tmp/.ICE-unix/2781,unix/yd-Legion-Y9000P-IAH7H:/tmp/.ICE-unix/2781'), ('INVOCATION_ID', '069bb194a78b444d91662297e1ccd0a8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('DISPLAY', ':0'), ('MUJOCO_PY_MUJOCO_PATH', '/home/yd/.mujoco/mujoco210'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('MUJOCO_GL', 'egl'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('CONDA_PYTHON_EXE', '/home/yd/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2:/opt/ros/humble'), ('TERMINATOR_UUID', 'urn:uuid:93997882-4592-4284-b6ea-5cf04a2edc0e'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/yd/anaconda3/bin/conda'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('PYTHONPATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2:/opt/ros/humble')]), 'shell': False}
+[3.408186] (-) TimerEvent: {}
+[3.437953] (fast_lio) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.445374] (fast_lio) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.451765] (fast_lio) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_fast_lio\n'}
+[3.508442] (-) TimerEvent: {}
+[3.582705] (fast_lio) StdoutLine: {'line': b'running egg_info\n'}
+[3.583164] (fast_lio) StdoutLine: {'line': b'creating fast_lio.egg-info\n'}
+[3.583276] (fast_lio) StdoutLine: {'line': b'writing fast_lio.egg-info/PKG-INFO\n'}
+[3.583482] (fast_lio) StdoutLine: {'line': b'writing dependency_links to fast_lio.egg-info/dependency_links.txt\n'}
+[3.583582] (fast_lio) StdoutLine: {'line': b'writing top-level names to fast_lio.egg-info/top_level.txt\n'}
+[3.583665] (fast_lio) StdoutLine: {'line': b"writing manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[3.584484] (fast_lio) StdoutLine: {'line': b"reading manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[3.584743] (fast_lio) StdoutLine: {'line': b"writing manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[3.606092] (fast_lio) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_fast_lio_egg\n'}
+[3.608562] (-) TimerEvent: {}
+[3.631041] (fast_lio) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_c.dir/rosidl_generator_c/fast_lio/msg/detail/pose6_d__functions.c.o\x1b[0m\n'}
+[3.633804] (fast_lio) StdoutLine: {'line': b'[  8%] Built target fast_lio__cpp\n'}
+[3.642679] (fast_lio) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.642861] (fast_lio) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.642925] (fast_lio) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.708726] (-) TimerEvent: {}
+[3.717087] (fast_lio) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libfast_lio__rosidl_generator_c.so\x1b[0m\n'}
+[3.750139] (fast_lio) StdoutLine: {'line': b'[ 20%] Built target fast_lio__rosidl_generator_c\n'}
+[3.760151] (fast_lio) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.760324] (fast_lio) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.760410] (fast_lio) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.808839] (-) TimerEvent: {}
+[3.820836] (fast_lio) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fast_lio/msg/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[3.834636] (fast_lio) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[3.839290] (fast_lio) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[3.908982] (-) TimerEvent: {}
+[3.961295] (fast_lio) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_c.dir/rosidl_typesupport_c/fast_lio/msg/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[3.961704] (fast_lio) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o\x1b[0m\n'}
+[3.971759] (fast_lio) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fast_lio/msg/detail/pose6_d__type_support.c.o\x1b[0m\n'}
+[3.990929] (fast_lio) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.991111] (fast_lio) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.009118] (-) TimerEvent: {}
+[4.018054] (fast_lio) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking C shared library libfast_lio__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.026637] (fast_lio) StdoutLine: {'line': b'[ 54%] Built target fast_lio__rosidl_typesupport_cpp\n'}
+[4.026820] (fast_lio) StdoutLine: {'line': b'[ 54%] Built target fast_lio__rosidl_typesupport_c\n'}
+[4.046149] (fast_lio) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o\x1b[0m\n'}
+[4.046550] (fast_lio) StdoutLine: {'line': b'[ 57%] Built target fast_lio__rosidl_typesupport_introspection_c\n'}
+[4.048007] (fast_lio) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o\x1b[0m\n'}
+[4.048160] (fast_lio) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o\x1b[0m\n'}
+[4.091142] (fast_lio) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.109241] (-) TimerEvent: {}
+[4.109670] (fast_lio) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.153423] (fast_lio) StdoutLine: {'line': b'[ 68%] Built target fast_lio__rosidl_typesupport_introspection_cpp\n'}
+[4.153583] (fast_lio) StdoutLine: {'line': b'[ 68%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp\n'}
+[4.175307] (fast_lio) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.209542] (-) TimerEvent: {}
+[4.236170] (fast_lio) StdoutLine: {'line': b'[ 71%] Built target fast_lio__rosidl_typesupport_fastrtps_c\n'}
+[4.256720] (fast_lio) StdoutLine: {'line': b'[ 71%] Built target fast_lio\n'}
+[4.277605] (fast_lio) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.309706] (-) TimerEvent: {}
+[4.410223] (-) TimerEvent: {}
+[4.510863] (-) TimerEvent: {}
+[4.535379] (fast_lio) StdoutLine: {'line': b'[ 74%] Built target fast_lio__py\n'}
+[4.554216] (fast_lio) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o\x1b[0m\n'}
+[4.611213] (-) TimerEvent: {}
+[4.648288] (fast_lio) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so\x1b[0m\n'}
+[4.685775] (fast_lio) StdoutLine: {'line': b'[ 80%] Built target fast_lio__rosidl_generator_py\n'}
+[4.706279] (fast_lio) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.706668] (fast_lio) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.706855] (fast_lio) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.711293] (-) TimerEvent: {}
+[4.783281] (fast_lio) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.783542] (fast_lio) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.783635] (fast_lio) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.811361] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext\n'}
+[4.811568] (-) TimerEvent: {}
+[4.812093] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_typesupport_c__pyext\n'}
+[4.814184] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.911675] (-) TimerEvent: {}
+[5.012034] (-) TimerEvent: {}
+[5.112497] (-) TimerEvent: {}
+[5.212959] (-) TimerEvent: {}
+[5.313439] (-) TimerEvent: {}
+[5.414036] (-) TimerEvent: {}
+[5.514312] (-) TimerEvent: {}
+[5.614626] (-) TimerEvent: {}
+[5.714979] (-) TimerEvent: {}
+[5.815460] (-) TimerEvent: {}
+[5.915923] (-) TimerEvent: {}
+[6.016444] (-) TimerEvent: {}
+[6.116999] (-) TimerEvent: {}
+[6.217391] (-) TimerEvent: {}
+[6.317700] (-) TimerEvent: {}
+[6.417990] (-) TimerEvent: {}
+[6.518442] (-) TimerEvent: {}
+[6.618975] (-) TimerEvent: {}
+[6.719475] (-) TimerEvent: {}
+[6.819999] (-) TimerEvent: {}
+[6.920344] (-) TimerEvent: {}
+[7.020654] (-) TimerEvent: {}
+[7.121039] (-) TimerEvent: {}
+[7.221506] (-) TimerEvent: {}
+[7.321991] (-) TimerEvent: {}
+[7.422428] (-) TimerEvent: {}
+[7.522929] (-) TimerEvent: {}
+[7.623291] (-) TimerEvent: {}
+[7.723587] (-) TimerEvent: {}
+[7.823936] (-) TimerEvent: {}
+[7.924440] (-) TimerEvent: {}
+[8.024939] (-) TimerEvent: {}
+[8.125411] (-) TimerEvent: {}
+[8.225778] (-) TimerEvent: {}
+[8.326152] (-) TimerEvent: {}
+[8.371920] (fast_lio) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22\x1b[m\x1b[K,\n'}
+[8.372053] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23\x1b[m\x1b[K,\n'}
+[8.372085] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14\x1b[m\x1b[K,\n'}
+[8.372111] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42\x1b[m\x1b[K,\n'}
+[8.372136] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25\x1b[m\x1b[K,\n'}
+[8.372159] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29\x1b[m\x1b[K,\n'}
+[8.372191] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/shared_ptr.hpp:17\x1b[m\x1b[K,\n'}
+[8.372215] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/microsec_time_clock.hpp:18\x1b[m\x1b[K,\n'}
+[8.372238] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31\x1b[m\x1b[K,\n'}
+[8.372263] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/detail/os_thread_functions.hpp:36\x1b[m\x1b[K,\n'}
+[8.372286] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/sync/file_lock.hpp:26\x1b[m\x1b[K,\n'}
+[8.372309] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:46\x1b[m\x1b[K,\n'}
+[8.372332] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:73\x1b[m\x1b[K,\n'}
+[8.372372] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/yd/program/nyx/FAST-LIO/fastlio_ws/src/FAST_LIO_ROS2/src/IMU_Processing.hpp:18\x1b[m\x1b[K,\n'}
+[8.372396] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/yd/program/nyx/FAST-LIO/fastlio_ws/src/FAST_LIO_ROS2/src/laserMapping.cpp:47\x1b[m\x1b[K:\n'}
+[8.372419] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.372446] (fast_lio) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[8.372469] (fast_lio) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.426384] (-) TimerEvent: {}
+[8.526658] (-) TimerEvent: {}
+[8.627038] (-) TimerEvent: {}
+[8.727413] (-) TimerEvent: {}
+[8.827855] (-) TimerEvent: {}
+[8.928391] (-) TimerEvent: {}
+[9.028678] (-) TimerEvent: {}
+[9.129152] (-) TimerEvent: {}
+[9.229537] (-) TimerEvent: {}
+[9.329948] (-) TimerEvent: {}
+[9.430328] (-) TimerEvent: {}
+[9.530806] (-) TimerEvent: {}
+[9.631325] (-) TimerEvent: {}
+[9.731649] (-) TimerEvent: {}
+[9.832166] (-) TimerEvent: {}
+[9.932517] (-) TimerEvent: {}
+[10.032901] (-) TimerEvent: {}
+[10.133266] (-) TimerEvent: {}
+[10.233734] (-) TimerEvent: {}
+[10.334273] (-) TimerEvent: {}
+[10.434644] (-) TimerEvent: {}
+[10.535143] (-) TimerEvent: {}
+[10.635548] (-) TimerEvent: {}
+[10.735933] (-) TimerEvent: {}
+[10.836306] (-) TimerEvent: {}
+[10.936667] (-) TimerEvent: {}
+[11.037196] (-) TimerEvent: {}
+[11.137591] (-) TimerEvent: {}
+[11.238069] (-) TimerEvent: {}
+[11.338459] (-) TimerEvent: {}
+[11.438834] (-) TimerEvent: {}
+[11.539207] (-) TimerEvent: {}
+[11.639655] (-) TimerEvent: {}
+[11.740134] (-) TimerEvent: {}
+[11.840582] (-) TimerEvent: {}
+[11.941057] (-) TimerEvent: {}
+[12.041433] (-) TimerEvent: {}
+[12.141790] (-) TimerEvent: {}
+[12.242141] (-) TimerEvent: {}
+[12.342612] (-) TimerEvent: {}
+[12.443109] (-) TimerEvent: {}
+[12.543582] (-) TimerEvent: {}
+[12.644086] (-) TimerEvent: {}
+[12.744441] (-) TimerEvent: {}
+[12.844890] (-) TimerEvent: {}
+[12.945286] (-) TimerEvent: {}
+[13.045702] (-) TimerEvent: {}
+[13.146307] (-) TimerEvent: {}
+[13.246778] (-) TimerEvent: {}
+[13.347286] (-) TimerEvent: {}
+[13.447680] (-) TimerEvent: {}
+[13.548084] (-) TimerEvent: {}
+[13.648455] (-) TimerEvent: {}
+[13.748916] (-) TimerEvent: {}
+[13.849512] (-) TimerEvent: {}
+[13.949965] (-) TimerEvent: {}
+[14.050393] (-) TimerEvent: {}
+[14.150778] (-) TimerEvent: {}
+[14.251224] (-) TimerEvent: {}
+[14.351608] (-) TimerEvent: {}
+[14.452079] (-) TimerEvent: {}
+[14.552631] (-) TimerEvent: {}
+[14.653069] (-) TimerEvent: {}
+[14.753506] (-) TimerEvent: {}
+[14.853819] (-) TimerEvent: {}
+[14.954280] (-) TimerEvent: {}
+[15.054723] (-) TimerEvent: {}
+[15.155158] (-) TimerEvent: {}
+[15.255734] (-) TimerEvent: {}
+[15.356107] (-) TimerEvent: {}
+[15.456505] (-) TimerEvent: {}
+[15.556821] (-) TimerEvent: {}
+[15.657257] (-) TimerEvent: {}
+[15.757577] (-) TimerEvent: {}
+[15.858122] (-) TimerEvent: {}
+[15.958696] (-) TimerEvent: {}
+[16.059102] (-) TimerEvent: {}
+[16.159466] (-) TimerEvent: {}
+[16.259840] (-) TimerEvent: {}
+[16.360279] (-) TimerEvent: {}
+[16.460708] (-) TimerEvent: {}
+[16.561167] (-) TimerEvent: {}
+[16.661713] (-) TimerEvent: {}
+[16.762138] (-) TimerEvent: {}
+[16.862508] (-) TimerEvent: {}
+[16.962813] (-) TimerEvent: {}
+[17.063191] (-) TimerEvent: {}
+[17.163585] (-) TimerEvent: {}
+[17.264066] (-) TimerEvent: {}
+[17.364675] (-) TimerEvent: {}
+[17.465093] (-) TimerEvent: {}
+[17.565619] (-) TimerEvent: {}
+[17.665987] (-) TimerEvent: {}
+[17.766414] (-) TimerEvent: {}
+[17.866779] (-) TimerEvent: {}
+[17.967200] (-) TimerEvent: {}
+[18.067825] (-) TimerEvent: {}
+[18.168214] (-) TimerEvent: {}
+[18.268613] (-) TimerEvent: {}
+[18.368993] (-) TimerEvent: {}
+[18.469485] (-) TimerEvent: {}
+[18.570015] (-) TimerEvent: {}
+[18.670516] (-) TimerEvent: {}
+[18.771116] (-) TimerEvent: {}
+[18.871516] (-) TimerEvent: {}
+[18.971931] (-) TimerEvent: {}
+[19.072261] (-) TimerEvent: {}
+[19.172630] (-) TimerEvent: {}
+[19.273192] (-) TimerEvent: {}
+[19.373638] (-) TimerEvent: {}
+[19.474194] (-) TimerEvent: {}
+[19.574558] (-) TimerEvent: {}
+[19.674969] (-) TimerEvent: {}
+[19.775329] (-) TimerEvent: {}
+[19.875795] (-) TimerEvent: {}
+[19.976357] (-) TimerEvent: {}
+[20.076694] (-) TimerEvent: {}
+[20.177209] (-) TimerEvent: {}
+[20.277544] (-) TimerEvent: {}
+[20.377938] (-) TimerEvent: {}
+[20.478295] (-) TimerEvent: {}
+[20.578695] (-) TimerEvent: {}
+[20.679225] (-) TimerEvent: {}
+[20.779617] (-) TimerEvent: {}
+[20.880196] (-) TimerEvent: {}
+[20.980427] (-) TimerEvent: {}
+[21.080728] (-) TimerEvent: {}
+[21.181086] (-) TimerEvent: {}
+[21.281531] (-) TimerEvent: {}
+[21.382090] (-) TimerEvent: {}
+[21.482510] (-) TimerEvent: {}
+[21.582996] (-) TimerEvent: {}
+[21.683328] (-) TimerEvent: {}
+[21.783709] (-) TimerEvent: {}
+[21.884006] (-) TimerEvent: {}
+[21.984296] (-) TimerEvent: {}
+[22.084720] (-) TimerEvent: {}
+[22.185185] (-) TimerEvent: {}
+[22.285721] (-) TimerEvent: {}
+[22.386133] (-) TimerEvent: {}
+[22.486621] (-) TimerEvent: {}
+[22.586967] (-) TimerEvent: {}
+[22.687396] (-) TimerEvent: {}
+[22.787883] (-) TimerEvent: {}
+[22.888407] (-) TimerEvent: {}
+[22.988997] (-) TimerEvent: {}
+[23.089293] (-) TimerEvent: {}
+[23.189683] (-) TimerEvent: {}
+[23.290043] (-) TimerEvent: {}
+[23.390439] (-) TimerEvent: {}
+[23.490727] (-) TimerEvent: {}
+[23.591188] (-) TimerEvent: {}
+[23.691782] (-) TimerEvent: {}
+[23.792118] (-) TimerEvent: {}
+[23.892631] (-) TimerEvent: {}
+[23.992907] (-) TimerEvent: {}
+[24.093415] (-) TimerEvent: {}
+[24.193835] (-) TimerEvent: {}
+[24.294283] (-) TimerEvent: {}
+[24.394720] (-) TimerEvent: {}
+[24.495131] (-) TimerEvent: {}
+[24.595546] (-) TimerEvent: {}
+[24.695918] (-) TimerEvent: {}
+[24.796406] (-) TimerEvent: {}
+[24.896893] (-) TimerEvent: {}
+[24.997369] (-) TimerEvent: {}
+[25.097860] (-) TimerEvent: {}
+[25.198207] (-) TimerEvent: {}
+[25.298560] (-) TimerEvent: {}
+[25.398923] (-) TimerEvent: {}
+[25.499388] (-) TimerEvent: {}
+[25.599859] (-) TimerEvent: {}
+[25.700311] (-) TimerEvent: {}
+[25.800861] (-) TimerEvent: {}
+[25.901258] (-) TimerEvent: {}
+[26.001502] (-) TimerEvent: {}
+[26.101849] (-) TimerEvent: {}
+[26.202219] (-) TimerEvent: {}
+[26.302517] (-) TimerEvent: {}
+[26.402960] (-) TimerEvent: {}
+[26.503480] (-) TimerEvent: {}
+[26.603891] (-) TimerEvent: {}
+[26.704403] (-) TimerEvent: {}
+[26.804786] (-) TimerEvent: {}
+[26.905170] (-) TimerEvent: {}
+[27.005566] (-) TimerEvent: {}
+[27.105950] (-) TimerEvent: {}
+[27.206466] (-) TimerEvent: {}
+[27.306775] (-) TimerEvent: {}
+[27.407297] (-) TimerEvent: {}
+[27.507575] (-) TimerEvent: {}
+[27.607970] (-) TimerEvent: {}
+[27.708349] (-) TimerEvent: {}
+[27.808721] (-) TimerEvent: {}
+[27.909225] (-) TimerEvent: {}
+[28.009664] (-) TimerEvent: {}
+[28.110188] (-) TimerEvent: {}
+[28.210557] (-) TimerEvent: {}
+[28.310920] (-) TimerEvent: {}
+[28.411196] (-) TimerEvent: {}
+[28.511614] (-) TimerEvent: {}
+[28.612084] (-) TimerEvent: {}
+[28.712525] (-) TimerEvent: {}
+[28.812995] (-) TimerEvent: {}
+[28.913287] (-) TimerEvent: {}
+[29.013556] (-) TimerEvent: {}
+[29.113822] (-) TimerEvent: {}
+[29.214192] (-) TimerEvent: {}
+[29.314536] (-) TimerEvent: {}
+[29.414928] (-) TimerEvent: {}
+[29.515472] (-) TimerEvent: {}
+[29.615903] (-) TimerEvent: {}
+[29.716487] (-) TimerEvent: {}
+[29.816845] (-) TimerEvent: {}
+[29.917378] (-) TimerEvent: {}
+[30.017726] (-) TimerEvent: {}
+[30.118087] (-) TimerEvent: {}
+[30.218595] (-) TimerEvent: {}
+[30.318985] (-) TimerEvent: {}
+[30.419449] (-) TimerEvent: {}
+[30.519730] (-) TimerEvent: {}
+[30.620102] (-) TimerEvent: {}
+[30.720575] (-) TimerEvent: {}
+[30.821011] (-) TimerEvent: {}
+[30.921500] (-) TimerEvent: {}
+[31.021941] (-) TimerEvent: {}
+[31.122487] (-) TimerEvent: {}
+[31.222726] (-) TimerEvent: {}
+[31.323112] (-) TimerEvent: {}
+[31.423535] (-) TimerEvent: {}
+[31.523905] (-) TimerEvent: {}
+[31.624426] (-) TimerEvent: {}
+[31.724847] (-) TimerEvent: {}
+[31.825370] (-) TimerEvent: {}
+[31.925691] (-) TimerEvent: {}
+[32.026066] (-) TimerEvent: {}
+[32.126424] (-) TimerEvent: {}
+[32.226894] (-) TimerEvent: {}
+[32.327460] (-) TimerEvent: {}
+[32.427904] (-) TimerEvent: {}
+[32.528394] (-) TimerEvent: {}
+[32.628749] (-) TimerEvent: {}
+[32.729117] (-) TimerEvent: {}
+[32.829535] (-) TimerEvent: {}
+[32.929954] (-) TimerEvent: {}
+[33.030468] (-) TimerEvent: {}
+[33.130946] (-) TimerEvent: {}
+[33.231491] (-) TimerEvent: {}
+[33.331877] (-) TimerEvent: {}
+[33.432375] (-) TimerEvent: {}
+[33.532748] (-) TimerEvent: {}
+[33.633136] (-) TimerEvent: {}
+[33.733569] (-) TimerEvent: {}
+[33.834011] (-) TimerEvent: {}
+[33.934572] (-) TimerEvent: {}
+[34.034852] (-) TimerEvent: {}
+[34.135274] (-) TimerEvent: {}
+[34.235562] (-) TimerEvent: {}
+[34.335940] (-) TimerEvent: {}
+[34.436377] (-) TimerEvent: {}
+[34.536805] (-) TimerEvent: {}
+[34.637343] (-) TimerEvent: {}
+[34.737767] (-) TimerEvent: {}
+[34.838113] (-) TimerEvent: {}
+[34.938465] (-) TimerEvent: {}
+[35.038877] (-) TimerEvent: {}
+[35.139411] (-) TimerEvent: {}
+[35.239799] (-) TimerEvent: {}
+[35.340304] (-) TimerEvent: {}
+[35.440552] (-) TimerEvent: {}
+[35.540904] (-) TimerEvent: {}
+[35.641235] (-) TimerEvent: {}
+[35.741614] (-) TimerEvent: {}
+[35.842139] (-) TimerEvent: {}
+[35.942596] (-) TimerEvent: {}
+[36.043149] (-) TimerEvent: {}
+[36.143539] (-) TimerEvent: {}
+[36.243939] (-) TimerEvent: {}
+[36.344311] (-) TimerEvent: {}
+[36.444632] (-) TimerEvent: {}
+[36.544996] (-) TimerEvent: {}
+[36.645400] (-) TimerEvent: {}
+[36.745898] (-) TimerEvent: {}
+[36.846304] (-) TimerEvent: {}
+[36.946675] (-) TimerEvent: {}
+[37.047012] (-) TimerEvent: {}
+[37.147452] (-) TimerEvent: {}
+[37.247927] (-) TimerEvent: {}
+[37.348413] (-) TimerEvent: {}
+[37.448911] (-) TimerEvent: {}
+[37.549277] (-) TimerEvent: {}
+[37.649493] (-) TimerEvent: {}
+[37.749726] (-) TimerEvent: {}
+[37.850010] (-) TimerEvent: {}
+[37.950277] (-) TimerEvent: {}
+[38.050592] (-) TimerEvent: {}
+[38.150980] (-) TimerEvent: {}
+[38.251421] (-) TimerEvent: {}
+[38.351832] (-) TimerEvent: {}
+[38.452147] (-) TimerEvent: {}
+[38.552527] (-) TimerEvent: {}
+[38.652786] (-) TimerEvent: {}
+[38.753144] (-) TimerEvent: {}
+[38.853519] (-) TimerEvent: {}
+[38.953985] (-) TimerEvent: {}
+[39.054539] (-) TimerEvent: {}
+[39.154938] (-) TimerEvent: {}
+[39.255442] (-) TimerEvent: {}
+[39.355705] (-) TimerEvent: {}
+[39.456075] (-) TimerEvent: {}
+[39.556432] (-) TimerEvent: {}
+[39.656870] (-) TimerEvent: {}
+[39.757411] (-) TimerEvent: {}
+[39.857710] (-) TimerEvent: {}
+[39.958227] (-) TimerEvent: {}
+[40.058481] (-) TimerEvent: {}
+[40.158820] (-) TimerEvent: {}
+[40.259093] (-) TimerEvent: {}
+[40.359523] (-) TimerEvent: {}
+[40.459885] (-) TimerEvent: {}
+[40.560363] (-) TimerEvent: {}
+[40.660843] (-) TimerEvent: {}
+[40.761266] (-) TimerEvent: {}
+[40.861704] (-) TimerEvent: {}
+[40.962066] (-) TimerEvent: {}
+[41.062483] (-) TimerEvent: {}
+[41.162751] (-) TimerEvent: {}
+[41.263121] (-) TimerEvent: {}
+[41.363626] (-) TimerEvent: {}
+[41.464036] (-) TimerEvent: {}
+[41.564425] (-) TimerEvent: {}
+[41.664652] (-) TimerEvent: {}
+[41.765027] (-) TimerEvent: {}
+[41.865377] (-) TimerEvent: {}
+[41.965819] (-) TimerEvent: {}
+[42.066297] (-) TimerEvent: {}
+[42.166721] (-) TimerEvent: {}
+[42.267171] (-) TimerEvent: {}
+[42.367520] (-) TimerEvent: {}
+[42.467866] (-) TimerEvent: {}
+[42.568196] (-) TimerEvent: {}
+[42.668633] (-) TimerEvent: {}
+[42.769090] (-) TimerEvent: {}
+[42.869525] (-) TimerEvent: {}
+[42.969991] (-) TimerEvent: {}
+[43.070380] (-) TimerEvent: {}
+[43.170737] (-) TimerEvent: {}
+[43.271074] (-) TimerEvent: {}
+[43.371470] (-) TimerEvent: {}
+[43.471898] (-) TimerEvent: {}
+[43.572388] (-) TimerEvent: {}
+[43.672846] (-) TimerEvent: {}
+[43.773250] (-) TimerEvent: {}
+[43.873741] (-) TimerEvent: {}
+[43.974109] (-) TimerEvent: {}
+[44.074465] (-) TimerEvent: {}
+[44.174716] (-) TimerEvent: {}
+[44.275153] (-) TimerEvent: {}
+[44.375656] (-) TimerEvent: {}
+[44.475970] (-) TimerEvent: {}
+[44.576435] (-) TimerEvent: {}
+[44.676673] (-) TimerEvent: {}
+[44.777008] (-) TimerEvent: {}
+[44.877395] (-) TimerEvent: {}
+[44.977782] (-) TimerEvent: {}
+[45.078260] (-) TimerEvent: {}
+[45.178608] (-) TimerEvent: {}
+[45.278948] (-) TimerEvent: {}
+[45.379264] (-) TimerEvent: {}
+[45.479711] (-) TimerEvent: {}
+[45.580052] (-) TimerEvent: {}
+[45.680406] (-) TimerEvent: {}
+[45.780796] (-) TimerEvent: {}
+[45.881241] (-) TimerEvent: {}
+[45.981758] (-) TimerEvent: {}
+[46.082058] (-) TimerEvent: {}
+[46.182560] (-) TimerEvent: {}
+[46.282931] (-) TimerEvent: {}
+[46.383307] (-) TimerEvent: {}
+[46.483683] (-) TimerEvent: {}
+[46.584124] (-) TimerEvent: {}
+[46.684627] (-) TimerEvent: {}
+[46.785014] (-) TimerEvent: {}
+[46.885514] (-) TimerEvent: {}
+[46.985741] (-) TimerEvent: {}
+[47.086029] (-) TimerEvent: {}
+[47.186387] (-) TimerEvent: {}
+[47.286839] (-) TimerEvent: {}
+[47.387370] (-) TimerEvent: {}
+[47.487828] (-) TimerEvent: {}
+[47.588314] (-) TimerEvent: {}
+[47.688568] (-) TimerEvent: {}
+[47.788932] (-) TimerEvent: {}
+[47.889268] (-) TimerEvent: {}
+[47.989700] (-) TimerEvent: {}
+[48.090219] (-) TimerEvent: {}
+[48.190587] (-) TimerEvent: {}
+[48.291064] (-) TimerEvent: {}
+[48.391488] (-) TimerEvent: {}
+[48.491826] (-) TimerEvent: {}
+[48.592204] (-) TimerEvent: {}
+[48.692516] (-) TimerEvent: {}
+[48.792937] (-) TimerEvent: {}
+[48.893349] (-) TimerEvent: {}
+[48.993835] (-) TimerEvent: {}
+[49.094151] (-) TimerEvent: {}
+[49.194546] (-) TimerEvent: {}
+[49.294774] (-) TimerEvent: {}
+[49.305157] (fast_lio) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable fastlio_mapping\x1b[0m\n'}
+[49.394862] (-) TimerEvent: {}
+[49.495130] (-) TimerEvent: {}
+[49.595445] (-) TimerEvent: {}
+[49.695796] (-) TimerEvent: {}
+[49.796185] (-) TimerEvent: {}
+[49.896636] (-) TimerEvent: {}
+[49.996947] (-) TimerEvent: {}
+[50.036533] (fast_lio) StdoutLine: {'line': b'[100%] Built target fastlio_mapping\n'}
+[50.047601] (fast_lio) CommandEnded: {'returncode': 0}
+[50.048111] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'install'}
+[50.054930] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio'], 'cwd': '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio', 'env': OrderedDict([('LANGUAGE', 'en_US:en'), ('USER', 'yd'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64::/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidia:/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidiasource:/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidiasource:/home/yd/.mujoco/mujoco210/bin:/usr/lib/nvidia:/usr/lib/nvidia'), ('HOME', '/home/yd'), ('OLDPWD', '/home/yd/program/nyx/FAST-LIO/fastlio_ws'), ('LESS', '-R'), ('CONDA_SHLVL', '0'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/yd/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('MANAGERPID', '2357'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '3011'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '11151'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('_CE_M', ''), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'yd'), ('JOURNAL_STREAM', '8:34255'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('USERNAME', 'yd'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.2/bin:/usr/local/cuda-12.2/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/yd/anaconda3/condabin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/yd-Legion-Y9000P-IAH7H:@/tmp/.ICE-unix/2781,unix/yd-Legion-Y9000P-IAH7H:/tmp/.ICE-unix/2781'), ('INVOCATION_ID', '069bb194a78b444d91662297e1ccd0a8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('DISPLAY', ':0'), ('MUJOCO_PY_MUJOCO_PATH', '/home/yd/.mujoco/mujoco210'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('MUJOCO_GL', 'egl'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('CONDA_PYTHON_EXE', '/home/yd/anaconda3/bin/python'), ('AMENT_PREFIX_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2:/opt/ros/humble'), ('TERMINATOR_UUID', 'urn:uuid:93997882-4592-4284-b6ea-5cf04a2edc0e'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yd/program/nyx/FAST-LIO/fastlio_ws/build/fast_lio'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/yd/anaconda3/bin/conda'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('PYTHONPATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2:/opt/ros/humble')]), 'shell': False}
+[50.063715] (fast_lio) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[50.064162] (fast_lio) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[50.064324] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio\n'}
+[50.070467] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h\n'}
+[50.078245] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h\n'}
+[50.085003] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h\n'}
+[50.090563] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h\n'}
+[50.097125] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h\n'}
+[50.097216] (-) TimerEvent: {}
+[50.107400] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/library_path.sh\n'}
+[50.114599] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/library_path.dsv\n'}
+[50.122753] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h\n'}
+[50.130206] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[50.137015] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp\n'}
+[50.144857] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp\n'}
+[50.150610] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp\n'}
+[50.156277] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp\n'}
+[50.162780] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp\n'}
+[50.169817] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[50.176290] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[50.183552] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[50.189189] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h\n'}
+[50.195912] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[50.197429] (-) TimerEvent: {}
+[50.201294] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.207863] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/pythonpath.sh\n'}
+[50.213423] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/pythonpath.dsv\n'}
+[50.219990] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[50.225391] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[50.232001] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[50.239785] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[50.246281] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py\n'}
+[50.251716] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c\n'}
+[50.257435] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[50.265049] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[50.271163] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.278775] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.287706] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.296223] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so\n'}
+[50.297502] (-) TimerEvent: {}
+[50.305252] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py\n'}
+[50.312958] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py\n'}
+[50.321715] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c\n'}
+[50.328236] (fast_lio) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.328329] (fast_lio) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.328484] (fast_lio) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.328558] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/msg/Pose6D.idl\n'}
+[50.336359] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/msg/Pose6D.msg\n'}
+[50.342726] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/fast_lio/fastlio_mapping\n'}
+[50.349446] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/config/avia.yaml\n'}
+[50.355361] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/config/horizon.yaml\n'}
+[50.361495] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/config/mid360.yaml\n'}
+[50.366999] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/config/ouster64.yaml\n'}
+[50.372042] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/config/velodyne.yaml\n'}
+[50.377259] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch\n'}
+[50.383891] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/launch/mapping.launch.py\n'}
+[50.392169] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/rviz/fastlio.rviz\n'}
+[50.397688] (-) TimerEvent: {}
+[50.400460] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio\n'}
+[50.407859] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio\n'}
+[50.413143] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh\n'}
+[50.419004] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv\n'}
+[50.429636] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/path.sh\n'}
+[50.436568] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/environment/path.dsv\n'}
+[50.442990] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/local_setup.bash\n'}
+[50.450117] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/local_setup.sh\n'}
+[50.455297] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/local_setup.zsh\n'}
+[50.462587] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/local_setup.dsv\n'}
+[50.471589] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/package.dsv\n'}
+[50.477763] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/ament_index/resource_index/packages/fast_lio\n'}
+[50.485155] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake\n'}
+[50.492106] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[50.497887] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[50.497960] (-) TimerEvent: {}
+[50.504526] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[50.512024] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[50.517778] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[50.524249] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[50.532913] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake\n'}
+[50.539456] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake\n'}
+[50.545724] (fast_lio) StdoutLine: {'line': b'-- Symlinking: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/package.xml\n'}
+[50.553229] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so\n'}
+[50.553362] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""\n'}
+[50.553416] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so\n'}
+[50.553614] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[50.553681] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so\n'}
+[50.553713] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[50.553739] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so\n'}
+[50.553768] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""\n'}
+[50.553793] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so\n'}
+[50.553948] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""\n'}
+[50.553986] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so\n'}
+[50.554015] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[50.554042] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so\n'}
+[50.554094] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""\n'}
+[50.577505] (fast_lio) StdoutLine: {'line': b"Listing '/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...\n"}
+[50.577631] (fast_lio) StdoutLine: {'line': b"Compiling '/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...\n"}
+[50.577661] (fast_lio) StdoutLine: {'line': b"Listing '/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...\n"}
+[50.577686] (fast_lio) StdoutLine: {'line': b"Compiling '/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...\n"}
+[50.577709] (fast_lio) StdoutLine: {'line': b"Compiling '/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...\n"}
+[50.580482] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so\n'}
+[50.580767] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""\n'}
+[50.580813] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake\n'}
+[50.580858] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake\n'}
+[50.580885] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[50.580912] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[50.580938] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake\n'}
+[50.580963] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[50.580989] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[50.581013] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake\n'}
+[50.581037] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[50.581062] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake\n'}
+[50.581216] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake\n'}
+[50.581252] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[50.581278] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[50.581303] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake\n'}
+[50.581327] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake\n'}
+[50.581363] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake\n'}
+[50.581388] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/yd/program/nyx/FAST-LIO/fastlio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake\n'}
+[50.582814] (fast_lio) CommandEnded: {'returncode': 0}
+[50.598388] (-) TimerEvent: {}
+[50.599567] (fast_lio) JobEnded: {'identifier': 'fast_lio', 'rc': 0}
+[50.599944] (-) EventReactorShutdown: {}

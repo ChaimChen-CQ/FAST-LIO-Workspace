@@ -1,0 +1,34 @@
+[0.007s] Invoking command in '/home/yd/program/nyx/FAST-LIO/ros2_ws/build/livox_ros_driver2': /usr/bin/cmake /home/yd/program/nyx/FAST-LIO/ros2_ws/src/livox_ros_driver2 -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2
+[0.075s] -- The C compiler identification is GNU 11.4.0
+[0.118s] -- The CXX compiler identification is GNU 11.4.0
+[0.126s] -- Detecting C compiler ABI info
+[0.194s] -- Detecting C compiler ABI info - done
+[0.199s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.199s] -- Detecting C compile features
+[0.199s] -- Detecting C compile features - done
+[0.202s] -- Detecting CXX compiler ABI info
+[0.279s] -- Detecting CXX compiler ABI info - done
+[0.284s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.284s] -- Detecting CXX compile features
+[0.284s] -- Detecting CXX compile features - done
+[0.285s] -- livox_ros_driver2 version: 1.2.4
+[0.299s] [31mCMake Error at CMakeLists.txt:224 (find_package):
+[0.299s]   By not providing "Findament_cmake_auto.cmake" in CMAKE_MODULE_PATH this
+[0.299s]   project has asked CMake to find a package configuration file provided by
+[0.299s]   "ament_cmake_auto", but CMake did not find one.
+[0.299s] 
+[0.299s]   Could not find a package configuration file provided by "ament_cmake_auto"
+[0.299s]   with any of the following names:
+[0.299s] 
+[0.299s]     ament_cmake_autoConfig.cmake
+[0.299s]     ament_cmake_auto-config.cmake
+[0.299s] 
+[0.299s]   Add the installation prefix of "ament_cmake_auto" to CMAKE_PREFIX_PATH or
+[0.299s]   set "ament_cmake_auto_DIR" to a directory containing one of the above
+[0.299s]   files.  If "ament_cmake_auto" provides a separate development package or
+[0.299s]   SDK, be sure it has been installed.
+[0.299s] 
+[0.299s] [0m
+[0.299s] -- Configuring incomplete, errors occurred!
+[0.299s] See also "/home/yd/program/nyx/FAST-LIO/ros2_ws/build/livox_ros_driver2/CMakeFiles/CMakeOutput.log".
+[0.301s] Invoked command in '/home/yd/program/nyx/FAST-LIO/ros2_ws/build/livox_ros_driver2' returned '1': /usr/bin/cmake /home/yd/program/nyx/FAST-LIO/ros2_ws/src/livox_ros_driver2 -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/yd/program/nyx/FAST-LIO/ros2_ws/install/livox_ros_driver2
