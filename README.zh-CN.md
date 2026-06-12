@@ -1,10 +1,12 @@
-# Livox Mid-360 + FAST_LIO_ROS2 General Guide
+# Livox Mid-360 + FAST_LIO_ROS2 Humble 通用配置手册
 
-[中文文档](README.zh-CN.md)
+[English](README.md)
 
-This guide is a general checklist for bringing up a Livox Mid-360 with `livox_ros_driver2` and `FAST_LIO_ROS2` on Ubuntu 22.04 + ROS 2 Humble.
+这是一份通用复现手册，用于在 **Ubuntu 22.04 + ROS 2 Humble** 环境下启动 Livox Mid-360，并运行 `livox_ros_driver2` 与 `FAST_LIO_ROS2`。
 
-## 1. System Relationship
+## 1. 系统关系
+
+整体关系可以理解为：
 
 ```text
 Ubuntu 22.04
@@ -14,30 +16,30 @@ Ubuntu 22.04
 -> RViz
 ```
 
-Ubuntu handles hardware, networking, system Python, C++ build tools, and shared libraries.
+Ubuntu 负责网卡、文件系统、系统 Python、C++ 编译工具、动态库等底层环境。
 
-ROS 2 provides the robot middleware: topics, launch files, package discovery, `ros2` commands, and `colcon` builds.
+ROS 2 是机器人中间件，负责 topic 通信、launch 启动、package 管理、`ros2` 命令和 `colcon` 编译。
 
-Conda is not required for this workflow. If Conda is installed, deactivate it before building or launching ROS packages:
+Conda 不是必须的。配置和编译 ROS 项目时，建议先退出 Conda：
 
 ```bash
 conda deactivate 2>/dev/null || true
 ```
 
-## 2. Recommended Versions
+## 2. 推荐版本
 
-| Component | Recommended |
+| 组件 | 推荐版本 |
 | --- | --- |
-| OS | Ubuntu 22.04 LTS |
+| 操作系统 | Ubuntu 22.04 LTS |
 | ROS | ROS 2 Humble |
-| Python | System Python, usually `/usr/bin/python3` |
-| LiDAR | Livox Mid-360 |
-| Driver | `livox_ros_driver2` |
-| SLAM | `FAST_LIO_ROS2` |
+| Python | 系统 Python，通常是 `/usr/bin/python3` |
+| 雷达 | Livox Mid-360 |
+| 雷达驱动 | `livox_ros_driver2` |
+| 建图算法 | `FAST_LIO_ROS2` |
 
-Avoid mixing Ubuntu 22.04 with ROS 1 Noetic instructions.
+注意：Ubuntu 22.04 推荐搭配 ROS 2 Humble，不要混用 ROS 1 Noetic 的安装流程。
 
-## 3. Install ROS 2 Humble
+## 3. 安装 ROS 2 Humble
 
 ```bash
 sudo apt update
@@ -56,22 +58,22 @@ sudo apt install python3-colcon-common-extensions python3-empy python3-catkin-pk
 sudo apt install ros-humble-pcl-ros ros-humble-pcl-conversions libeigen3-dev -y
 ```
 
-Source ROS:
+加载 ROS 环境：
 
 ```bash
 source /opt/ros/humble/setup.bash
 echo $ROS_DISTRO
 ```
 
-Expected:
+期望输出：
 
 ```text
 humble
 ```
 
-## 4. Workspace Layout
+## 4. 推荐目录结构
 
-Use one project folder with three main parts:
+建议把 SDK、雷达驱动和 FAST_LIO 放在同一个总目录下：
 
 ```text
 FAST-LIO/
@@ -82,9 +84,9 @@ FAST-LIO/
     └── src/FAST_LIO_ROS2/
 ```
 
-Replace `<FAST_LIO_ROOT>` below with your actual project path.
+下面的 `<FAST_LIO_ROOT>` 代表你自己的项目根目录。
 
-## 5. Build Livox-SDK2
+## 5. 编译 Livox-SDK2
 
 ```bash
 cd <FAST_LIO_ROOT>
@@ -99,13 +101,19 @@ sudo make install
 sudo ldconfig
 ```
 
-Verify:
+检查动态库：
 
 ```bash
 ldconfig -p | grep livox
 ```
 
-## 6. Build livox_ros_driver2
+如果后面运行驱动时提示找不到 Livox 动态库，通常重新执行下面命令即可：
+
+```bash
+sudo ldconfig
+```
+
+## 6. 编译 livox_ros_driver2
 
 ```bash
 mkdir -p <FAST_LIO_ROOT>/ros2_ws/src
@@ -119,13 +127,13 @@ cd <FAST_LIO_ROOT>/ros2_ws/src/livox_ros_driver2
 ./build.sh humble
 ```
 
-Source the driver workspace:
+加载驱动工作区：
 
 ```bash
 source <FAST_LIO_ROOT>/ros2_ws/install/setup.bash
 ```
 
-## 7. Build FAST_LIO_ROS2
+## 7. 编译 FAST_LIO_ROS2
 
 ```bash
 mkdir -p <FAST_LIO_ROOT>/fastlio_ws/src
@@ -140,55 +148,62 @@ cd <FAST_LIO_ROOT>/fastlio_ws
 colcon build --symlink-install --cmake-args -DPython3_EXECUTABLE=/usr/bin/python3
 ```
 
-Source the FAST_LIO workspace:
+加载 FAST_LIO 工作区：
 
 ```bash
 source <FAST_LIO_ROOT>/fastlio_ws/install/setup.bash
 ```
 
-## 8. Network Setup
+## 8. 网络配置
 
-Connect the Mid-360 to the computer with Ethernet.
+Mid-360 建议通过网线直连电脑。
 
-Typical static IP plan:
+常见 IP 规划：
 
-| Device | Example IP |
+| 设备 | 示例 IP |
 | --- | --- |
-| Computer Ethernet | `192.168.1.50/24` |
+| 电脑有线网卡 | `192.168.1.50/24` |
 | Mid-360 | `192.168.1.161` |
 
-Check network interfaces:
+查看网卡：
 
 ```bash
 ip -4 addr show
 nmcli device status
 ```
 
-Set the wired interface manually using NetworkManager. Replace the connection name with your actual wired connection:
+使用 NetworkManager 设置有线网卡。先查看连接名：
 
 ```bash
 nmcli connection show
+```
+
+假设有线连接名为 `Wired connection 1`：
+
+```bash
 sudo nmcli connection modify "Wired connection 1" ipv4.method manual ipv4.addresses 192.168.1.50/24
 sudo nmcli connection down "Wired connection 1"
 sudo nmcli connection up "Wired connection 1"
 ```
 
-Scan for the LiDAR:
+扫描雷达 IP：
 
 ```bash
 sudo apt install nmap -y
 nmap -sn 192.168.1.0/24
 ```
 
-## 9. Configure MID360_config.json
+如果扫描到的 Mid-360 IP 不是 `192.168.1.161`，后面的配置文件也要同步修改。
 
-Edit:
+## 9. 配置 MID360_config.json
+
+编辑：
 
 ```text
 <FAST_LIO_ROOT>/ros2_ws/src/livox_ros_driver2/config/MID360_config.json
 ```
 
-Set all `host_net_info` IP fields to the computer Ethernet IP:
+把 `host_net_info` 里的 IP 改成电脑有线网卡 IP，例如：
 
 ```json
 "cmd_data_ip": "192.168.1.50",
@@ -198,15 +213,15 @@ Set all `host_net_info` IP fields to the computer Ethernet IP:
 "log_data_ip": "192.168.1.50"
 ```
 
-Set `lidar_configs` to the actual Mid-360 IP:
+把 `lidar_configs` 里的 IP 改成实际雷达 IP，例如：
 
 ```json
 "ip": "192.168.1.161"
 ```
 
-## 10. Start the LiDAR Driver
+## 10. 启动雷达驱动
 
-Terminal A:
+终端 A：
 
 ```bash
 conda deactivate 2>/dev/null || true
@@ -216,7 +231,7 @@ source <FAST_LIO_ROOT>/ros2_ws/install/setup.bash
 ros2 launch livox_ros_driver2 msg_MID360_launch.py
 ```
 
-Expected healthy signs:
+健康日志通常包含：
 
 ```text
 successfully change work mode
@@ -225,7 +240,7 @@ livox/imu publish use imu format
 livox/lidar publish use livox custom format
 ```
 
-Verify topics:
+验证 topic：
 
 ```bash
 ros2 topic list
@@ -233,16 +248,16 @@ ros2 topic hz /livox/lidar
 ros2 topic hz /livox/imu
 ```
 
-Typical rates:
+典型频率：
 
 ```text
-/livox/lidar  about 10 Hz
-/livox/imu    about 200 Hz
+/livox/lidar  约 10 Hz
+/livox/imu    约 200 Hz
 ```
 
-## 11. Start FAST_LIO
+## 11. 启动 FAST_LIO
 
-Terminal B:
+终端 B：
 
 ```bash
 conda deactivate 2>/dev/null || true
@@ -253,7 +268,7 @@ source <FAST_LIO_ROOT>/fastlio_ws/install/setup.bash
 ros2 launch fast_lio mapping.launch.py
 ```
 
-Expected healthy logs:
+健康日志通常包含：
 
 ```text
 Node init finished.
@@ -261,56 +276,62 @@ IMU Initial Done
 Initialize the map kdtree
 ```
 
-`Stereo is NOT SUPPORTED` from RViz is usually harmless. It only means stereo rendering is unavailable in the current display environment.
+RViz 里出现：
 
-## 12. RViz Healthy State
+```text
+Stereo is NOT SUPPORTED
+```
 
-A good RViz state usually looks like:
+通常不是错误，只是当前显示环境不支持立体渲染。普通 RViz 可视化不需要这个功能，可以忽略。
 
-- `Global Status` is OK.
-- `Fixed Frame` is OK, often `camera_init`.
-- `TF`, `Odometry`, `Path`, and `CloudMap` have no red errors.
-- A point cloud map appears and grows as the LiDAR moves.
+## 12. RViz 正常状态
 
-## 13. Common Issues
+比较健康的 RViz 状态：
 
-### ROS is not sourced
+- `Global Status` 为 OK。
+- `Fixed Frame` 正常，常见为 `camera_init`。
+- `TF`、`Odometry`、`Path`、`CloudMap` 没有红色错误。
+- 能看到点云地图，并且随着移动持续累积。
 
-Symptom:
+## 13. 常见问题
+
+### 13.1 ROS 没有 source
+
+现象：
 
 ```text
 ros2: command not found
 ```
 
-Fix:
+处理：
 
 ```bash
 source /opt/ros/humble/setup.bash
 ```
 
-### Conda breaks build
+### 13.2 Conda 干扰编译
 
-Symptom: Python module errors such as `empy`, `catkin_pkg`, or `ament_package`.
+现象：编译时找不到 `empy`、`catkin_pkg`、`ament_package` 等 Python 模块。
 
-Fix:
+处理：
 
 ```bash
 conda deactivate 2>/dev/null || true
 colcon build --symlink-install --cmake-args -DPython3_EXECUTABLE=/usr/bin/python3
 ```
 
-### Livox shared library not found
+### 13.3 找不到 Livox 动态库
 
-Fix:
+处理：
 
 ```bash
 sudo ldconfig
 ldconfig -p | grep livox
 ```
 
-### Bind failed or no LiDAR data
+### 13.4 Bind Failed 或没有雷达数据
 
-Check:
+检查：
 
 ```bash
 ip -4 addr show
@@ -318,30 +339,28 @@ ping <LIDAR_IP>
 nmap -sn 192.168.1.0/24
 ```
 
-Confirm:
+确认：
 
-- Computer Ethernet IP matches `host_net_info`.
-- LiDAR IP matches `lidar_configs`.
-- Ethernet cable and LiDAR power are good.
-- Firewall is not blocking traffic.
+- 电脑有线网卡 IP 和 `host_net_info` 一致。
+- 雷达 IP 和 `lidar_configs` 一致。
+- 网线连接正常，雷达已供电。
+- 防火墙没有阻断通信。
 
-### FAST_LIO says `No point, skip this scan`
+### 13.5 FAST_LIO 提示 `No point, skip this scan`
 
-This can happen briefly during startup. It is usually fine if point cloud data appears afterward.
-
-If it repeats forever, check:
+启动初期偶尔出现通常没问题。如果一直重复，需要检查点云是否真的发布：
 
 ```bash
 ros2 topic hz /livox/lidar
 ros2 topic echo /livox/lidar --once
 ```
 
-## 14. Success Criteria
+## 14. 成功标准
 
-The setup is considered successful when:
+满足下面条件即可认为链路跑通：
 
-- `livox_ros_driver2` connects to the Mid-360.
-- `/livox/lidar` publishes around 10 Hz.
-- `/livox/imu` publishes around 200 Hz.
-- FAST_LIO logs `IMU Initial Done`.
-- RViz shows odometry, path, and an accumulating point cloud map.
+- `livox_ros_driver2` 成功连接 Mid-360。
+- `/livox/lidar` 约 10 Hz。
+- `/livox/imu` 约 200 Hz。
+- FAST_LIO 输出 `IMU Initial Done`。
+- RViz 中能看到 odometry、path 和持续累积的点云地图。
